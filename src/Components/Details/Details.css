@@ -1,0 +1,267 @@
+.marginBot {
+    margin-bottom: 3rem;
+}
+.no-found {
+    font-size:1.3rem;
+   
+    letter-spacing: 1.5px;
+  
+}
+.whole-section {
+      animation: fadein 2s;
+   
+}
+
+
+
+.poster {
+    position: relative;
+    height:100vh;
+    padding:8rem 12rem;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Acme', sans-serif;
+    letter-spacing: 4px;
+}
+.movie-information {
+    display:flex;
+    justify-content: flex-start;
+}
+.left-container {
+    margin-right:4rem;
+    
+}
+.right-container {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size:1.3rem;
+}
+#poster-image {
+    width:10rem;
+    height:auto;
+    border-radius: 10px;
+    filter: brightness(130%);
+   
+}
+.rating {
+  
+    font-weight:900;
+    display: flex;
+   
+}
+.rating .rate-point {
+    margin-right:1.1rem;
+}
+.language {
+    display:flex;
+    
+    
+}
+.vertical-line {
+       display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin:0 1.2rem;
+    transform: scaleY(1.5);
+}
+
+
+.movie-name {
+    font-size:2rem;
+ 
+}
+.genres {
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.genres-container{
+    display:flex;
+    justify-content: space-between;
+  
+    align-items: center;
+}
+.genres-container p {
+        transform: scaleY(1.1);
+}
+.body {
+  background-color:#161130;
+  color:#d1d1e0;
+  padding:8rem 12rem;
+   font-family: 'Quicksand', sans-serif ;
+}
+.section-name {
+    font-size:3rem;
+    letter-spacing: 8px;
+    margin-bottom:2rem;
+   
+     color:#e4b4e4;
+
+}
+.item-summary{
+ 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:2rem 0;
+    
+    
+    
+}
+.overview {
+    font-size:1.3rem;
+   
+    letter-spacing: 1px;
+}
+.cast-box {
+    text-align: center;
+     
+   
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+    transform: scale(0.9);
+     filter:brightness(60%);
+    cursor: pointer;
+     
+}
+.cast-box:hover{
+    
+    transform: scale(1) translateY(-2px);
+  
+    filter:brightness(120%);
+
+}
+
+.cast-image {
+  margin:0 auto;
+   height: auto;
+   max-width:70%;
+   border-radius:10px;
+   margin-bottom:2rem;
+}
+.cast-name {
+   color:#d1d1e0;
+
+}
+.video-trailer {
+    padding:2rem;
+    height:25rem;
+}
+.review-section {
+    background-color: #004d3d;
+    padding:3rem;
+    border-radius:9px;
+    margin-top:5rem;
+   
+}
+.author {
+    font-size:1.8rem;
+    letter-spacing: 4px;
+}
+.review-content {
+    margin:2.5rem 0;
+}
+
+.see-full-review:hover {
+    filter: brightness(150%);
+    transform: translateY(-1px);
+   
+}
+@media only screen and (max-width: 1024px) {
+    .poster {
+          padding:5rem;
+          height:70vh;
+    }
+    .body {
+        padding:3rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .right-container {
+        font-size:1.2rem;
+    }
+    .poster {
+        padding:2rem;
+    }
+    .movie-name {
+        font-size:1.6rem;
+    }
+    .section-name {
+        font-size:1.6rem;
+        margin-bottom: 1rem;
+    }
+    .overview {
+        font-size:1rem;
+    }
+    .review-section {
+        padding:1rem;
+    }
+    .author {
+    font-size:1.5rem;
+    letter-spacing:2px;
+}
+}
+@media only screen and (max-width: 600px) {
+ .right-container {
+        font-size:1rem;
+    }
+    .movie-name {
+        font-size:1.3rem;
+    }
+    .left-container {
+    margin-right:1.5rem;
+    
+}
+#poster-image {
+    width:7rem;
+}
+ .poster {
+          padding:5rem;
+          height:50vh;
+          padding:1rem;
+    }
+
+}
+@media only screen and (max-width: 450px) {
+     .right-container {
+        font-size:0.9rem;
+    }
+     .movie-name {
+        font-size:1.1rem;
+    }
+    #poster-image {
+    width:5rem;
+}
+    .section-name {
+        font-size:1.1rem;
+    }
+      .overview {
+        font-size:0.9rem;
+    }
+
+     .author {
+         font-size:1rem;
+     }
+     .marginBot {
+         margin-bottom: 1rem;
+     }
+     .review-content {
+    margin:1rem 0;
+}
+.see-full-review {
+    font-size:0.9rem!important;
+}
+.body {
+    padding:1.5rem;
+}
+}
+

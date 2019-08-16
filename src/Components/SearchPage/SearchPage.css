@@ -1,0 +1,153 @@
+.main-container {
+    padding: 8rem;
+    height: 100%;
+    background-color: #181130;
+
+}
+
+.result-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Acme', sans-serif;
+    color: white;
+    letter-spacing: 6px;
+    grid-column: 2/5;
+
+
+}
+
+.poster-img {
+    width: 100%;
+    height: auto;
+    border-radius: 7px;
+    animation: fadein 3s;
+}
+
+.grid-results {
+    padding: 1rem 5rem;
+    display: grid;
+    align-items: center;
+
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+
+    grid-gap: 2rem;
+}
+
+.grid-item {
+    transition: all 0.2s;
+    transform: scale(0.9);
+    filter: brightness(70%);
+    cursor: pointer;
+    animation: fadein 2s;
+}
+
+.grid-item:hover {
+    transform: scale(1) translateY(-2px);
+
+    filter: brightness(120%);
+}
+
+.movie-title {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    animation: fadein 2s;
+    transition: 0.4s all ease-in-out;
+}
+
+.buttons button:hover {
+    transform: translateY(-2px);
+
+}
+
+#prev-button {
+    margin-right: 3rem;
+
+}
+
+.form-discover {
+    display: flex;
+    justify-content: center;
+}
+
+.form-discover div {
+    margin-right: 1rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .form-discover input {
+        width: 8rem;
+    }
+
+    .main-container {
+        padding: 1rem;
+    }
+
+    .grid-results {
+        padding: 0;
+        grid-row-gap: 0;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .result-title {
+
+        letter-spacing: 4px;
+        font-size: 1.8rem;
+
+
+    }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .form-discover {
+        flex-wrap: wrap;
+
+    }
+
+    .form-discover>* {
+        margin: 0.5rem 0;
+    }
+
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    .result-title {
+
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+
+
+    }
+    .grid-results{
+        grid-template-rows: repeat(5,min-content);
+    }
+    .buttons {
+        margin-top:1rem;
+    }
+    .buttons button {
+        
+        font-size:0.8rem!important;
+    }
+
+    .movie-title {
+        font-size: 1rem;
+    }
+}

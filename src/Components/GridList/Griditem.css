@@ -1,0 +1,64 @@
+#item {
+   
+    height:auto;
+   
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    margin-right:2rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+    transform: scale(0.9);
+        filter:brightness(80%);
+        cursor: pointer;
+}
+#grid-column {
+    margin-bottom: 2rem;
+  
+}
+
+#item:hover {
+    transform: scale(1) translateY(-2px);
+  
+    filter:brightness(120%);
+}
+#item:hover .label {
+           background-color: rgba(128, 255, 255,0.6)!important;
+}
+#title-movie {
+    color:white;
+    text-align: center;
+    
+}
+#img-movie {
+   
+    height:auto;
+    border-radius: 7px;
+    width:100%;
+    
+}
+.label {
+   background-color: rgba(128, 255, 255,0.3)!important;
+   position:absolute;
+   top:20px;
+   border-radius: 0 2px 2px 0!important;
+   color:white!important;
+   
+   
+}
+@media only screen and (max-width: 900px) {
+    #title-movie {
+        font-size:0.8rem;
+    }
+    #item {
+        letter-spacing: 1px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #item {
+        margin-right:0;
+   
+        width:20rem;
+    }
+}

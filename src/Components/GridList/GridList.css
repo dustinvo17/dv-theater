@@ -1,0 +1,63 @@
+#container {
+    padding: 0 2rem;
+    margin-bottom:3rem; 
+}
+
+#title {
+    color:white;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: 'Acme';
+    letter-spacing: 5px;
+}
+hr {
+    border:none;
+    height:1px;
+    background-image: linear-gradient(to right, #ffffff , #99ff66 );
+    width: 50%;
+    margin: 2rem auto;
+    height: 1px;
+    
+
+}
+@media only screen and (max-width: 1024px) {
+    #title {
+        font-size:1.4rem;
+        
+    }
+    hr {
+         margin: 1.2rem auto;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+     #title {
+        font-size:1.2rem;
+        letter-spacing: 3px;
+    }
+    hr{
+        margin:0.8rem auto;
+    }
+    #container {
+    
+    margin-bottom:1.2rem; 
+}
+}
+
+@media only screen and (max-width: 380px) {
+    #title {
+         font-size:1rem;
+        letter-spacing: 2px;
+    }
+    #container {
+    padding: 0 2rem;
+    margin-bottom:1rem; 
+}
+
+ hr {
+         margin: 0.3rem auto;
+    }
+}
+

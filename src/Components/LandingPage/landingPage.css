@@ -1,0 +1,61 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+
+}
+.landingPage {
+      animation: fadein 2s;
+   
+}
+.grid-list-container{
+    background-color:#161130;
+    padding:3rem 10rem;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .grid-list-container {
+        padding:2rem 3rem;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .grid-list-container {
+        padding:1rem;
+    }
+}
