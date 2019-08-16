@@ -99,6 +99,15 @@
         padding: 0;
         grid-row-gap: 0;
     }
+    .buttons button:hover {
+    transform: translateY(0);
+
+}
+    .grid-item:hover {
+    transform: scale(0.9) translateY(0);
+
+    filter: brightness(120%);
+}
 }
 
 @media only screen and (max-width: 750px) {
