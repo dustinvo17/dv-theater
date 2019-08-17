@@ -21,6 +21,12 @@
     transform: scale(3) ;
    
 }
+.name-tmdb {
+    width:3rem;
+    height:auto;
+   
+   
+}
 
 #icons-right{
    display: flex;

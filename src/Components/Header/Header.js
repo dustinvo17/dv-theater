@@ -28,6 +28,7 @@ import {Link} from 'react-router-dom'
                 <Link to="/">
                 {/* <img  className="name-web"src='dvtheater.png'></img> */}
                  <img alt="logo" className="name-web"src="https://www.freelogodesign.org/file/app/client/thumb/a537dda3-6f46-40d0-94a4-4125b4b1df14_200x200.png?1565758435775"/>
+                 
                 </Link>
                
             </div>
@@ -44,7 +45,8 @@ import {Link} from 'react-router-dom'
                         <Link to="/"><button className="ui basic blue button"><i className="home icon"></i> HOME </button></Link>
                         
                      <Link to="/discover"><button className="ui basic blue button"><i className="map icon"></i> DISCOVER</button></Link> 
-
+                    
+                    <a href="https://www.themoviedb.org/"><img alt="logo" className="name-tmdb"src="https://www.themoviedb.org/assets/2/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png"/></a>
                   
                    
                 </div>
