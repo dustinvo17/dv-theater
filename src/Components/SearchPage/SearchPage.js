@@ -90,12 +90,23 @@ class SearchPage extends Component {
             if(!results.length){
                 return <p className="result-title">No results found</p>
             } 
+            const urlLink = ()=>{
+                if(this.props.match.url.includes('people')){
+                    return 'person'
+                }
+                if(this.props.match.url.includes('tv')){
+                    return 'tv'
+                }
+                else{
+                    return 'movie'
+                }
+            }
                 
-            
+           console.log(this.props) 
             return results.map(movie => {
                 if (movie.poster_path || movie.backdrop_path || movie.profile_path) {
                     return <div className="grid-item" key={movie.id}>
-                        <Link to={`/details/${movie.media_type || 'movie'}/${movie.id}`}>
+                        <Link to={`/details/${movie.media_type || urlLink()}/${movie.id}`}>
                             <img
                                 className="poster-img"
                                 src={`https://image.tmdb.org/t/p/w1280${movie.poster_path || movie.backdrop_path || movie.profile_path}`}/>
